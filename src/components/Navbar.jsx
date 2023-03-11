@@ -1,1 +1,16 @@
-export default Navbar
+import { Outlet, Link } from "react-router-dom";
+
+const Navbar = () => {
+    return (
+        <>
+            <nav>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/portfolio">Portfolio</Link>
+            </nav>
+            <Outlet />
+        </>
+    )
+};
+
+export default Navbar;

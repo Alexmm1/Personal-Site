@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Main, About, Portfolio, Index } from "./components";
+import { Navbar, Main, About, Portfolio, Index } from "./components";
 
 import {
 	createBrowserRouter,
@@ -13,11 +13,11 @@ import {
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<BrowserRouter>
-			<Route path="/" element={<Main />}>
-				<Route path="about" element={<About />} />
-				<Route path="index">
-					<Route index element={<Index />} />
-					<Route path=":id" element={<Portfolio />} />
+			<Route path="/" element={<Navbar />}>
+				<Route path="index" element={<Index />} />
+				<Route path="About">
+				<Route index element={<About />} />
+				<Route path="Portfolio" element={<Portfolio />} />
 				</Route>
 			</Route>
 		</BrowserRouter>
