@@ -1,15 +1,16 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import {Navbar} from "./Navbar";
-import {About} from "./about";
+import {Navbar} from "./";
+import {Portfolio} from "./";
 
 const Main = () => {
     return(
         <div id="main">
             <Navbar/>
-            <About/>
+            <Portfolio/>
+            <Outlet/>
         </div>
     )
 }
 
-export default Main
+export default Main;
