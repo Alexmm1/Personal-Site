@@ -6,14 +6,9 @@ const Portfolio = () => {
         <main>
             <h1>Things I've built, in no particular order</h1>
             <section className="project">
-                <h2 className="project-name">The First Project</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at earum fuga harum alias nobis, eaque optio laudantium dolor sed eligendi consequatur distinctio aperiam accusantium, architecto exercitationem perferendis minus error.</p>
-                <p>Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui sed odio officia ipsa omnis earum quibusdam, dolor totam?</p>
-            </section>
-            <section className="project">
-                <h2 className="project-name">The Second Project</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi at earum fuga harum alias nobis, eaque optio laudantium dolor sed eligendi consequatur distinctio aperiam accusantium, architecto exercitationem perferendis minus error.</p>
-                <p>Fuga dolore impedit suscipit, vero odit, sequi in deleniti, odio ipsa facere et. Consequatur modi cum ullam adipisci unde amet qui sed odio officia ipsa omnis earum quibusdam, dolor totam?</p>
+                <h2 className="project-name">The First Project: Juicebox</h2>
+                <p>Working on Juicebox was good way to learn how to set up the database and api and to be able to work on the front and back-end of web dev.</p>
+                <p>Here is the github repository for Juicebox: https://github.com/Alexmm1/Juicebox </p>
             </section>
         </main>
     </div>
