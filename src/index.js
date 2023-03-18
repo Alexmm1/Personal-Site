@@ -12,15 +12,14 @@ import {
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<BrowserRouter>
+		<>
 			<Route path="/" element={<Main />}>
 				<Route path="index" element={<Index />} />
-				<Route path="About">
-				<Route index element={<About />} />
-				<Route path="Portfolio" element={<Portfolio />} />
-				</Route>
+					<Route path="About" element= {<About />}/>
+					<Route path="Portfolio" element={<Portfolio />} />
+				
 			</Route>
-		</BrowserRouter>
+		</>
 	)
 );
 

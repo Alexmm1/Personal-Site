@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 const About = () => {
     return(
@@ -34,6 +35,7 @@ const About = () => {
                     <img class="media-link" src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="twitter"/>
                 </a>
             </footer>
+            <Outlet/>
         </div>
     )
 }
