@@ -1,15 +1,10 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 
-const Index = () => {
+const Footer = () => {
     return(
         <div>
             <main>
-                <h1>Developer, Mentor, Determined</h1>
-                <p>Interested in improving myself with learning new items and skills, from studying and networking with coworkers.</p>
-                <p className="quote">"Accept the things to which fate binds you, and love the people with whom fate brings you together,but do so with all your heart."<br />-Marcus Aurelius</p>
-            </main>
-            <footer>
+                <footer>
                 <a href="https://facebook.com" target="_blank">
                     <img class="media-link" src="https://jolivar.ca/wp-content/uploads/facebook-logo-icon-file-facebook-icon-svg-wikimedia-commons-4.png" alt="facebook"/>
                 </a>
@@ -19,10 +14,11 @@ const Index = () => {
                 <a href="https://twitter.com" target="_blank">
                     <img class="media-link" src="https://cdn-icons-png.flaticon.com/512/124/124021.png" alt="twitter"/>
                 </a>
-            </footer>
-            <Outlet />
+                </footer>
+            </main>
         </div>
     )
 }
 
-export default Index;
+
+export default Footer;

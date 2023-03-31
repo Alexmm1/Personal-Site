@@ -1,6 +1,4 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
-
 
 const Portfolio = () => {
     return(
@@ -24,7 +22,6 @@ const Portfolio = () => {
                 </a>
             </footer>
         </main>
-        <Outlet/>
     </div>
     )
 }
