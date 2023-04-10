@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Raleway|Open+Sans|Satisfy&display=swap');
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -8,32 +8,29 @@ html {
   font-family: sans-serif;
   font-size: 15px;
   background: gray;
-  }
+}
 
-
-body{
+body {
   background-color: rgb(136, 107, 67);
   max-width: 960px;
   margin: 0 auto;
 }
-header{
-  overflow: auto;
+
+header {
   position: fixed;
-  font-size: 2rem;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
-  padding: .5em 1em;
+  font-size: 2rem;
+  padding: .5rem 1rem;
   box-shadow: 0 2px 4px -2px black;
+  overflow: auto;
+  background-color: whitesmoke;
 }
-main {
-  min-height: 100vh;
-  padding: 64px 24px 96px;
-  box-shadow: 0 0 12px -2px black;
-}
+
 header::after {
+  /* clear: both; */
   display: block;
-  clear: both;
   content: '';
 }
 
@@ -59,40 +56,107 @@ header::after {
   border-bottom: 1px solid #555;
 }
 
-.link{
-  float: right;
+main {
+  min-height: 100vh;
+  padding: 64px 24px 96px;
+  box-shadow: 0 0 12px -2px black;
 }
 
-.name {
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.project {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  width: calc(100% - 6em);
+  background: #fafafa;
+  color: #222;
+  box-shadow: 0 3px 6px -2px #ccc;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.project-name {
+  font-weight: 900;
+  font-size: 2em;
+  margin: 0 0 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.project p {
+  font-size: 1.3em;
+  font-weight: 100;
+  margin: 0 0 1em;
+}
+
+.project p:last-child {
+  margin-bottom: 0;
+}
+
+section:nth-of-type(odd) img {
+  width: 240px;
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+section:nth-of-type(even) img {
+  width: 240px;
+  margin-right: 1em;
+  margin-bottom: 1em;
   float: left;
 }
 
+section > img {
+  height: 100px;
+}
+
+section:nth-of-type(odd) > img {
+  float: left;
+  margin: 0 24px 24px 0;
+}
+
+section:nth-of-type(even) > img {
+  float: right;
+  margin: 0 0 24px 24px;
+}
+
+section {
+  border-top: 4px solid #bbb;
+}
+
 footer {
-  box-sizing: border-box;
   position: fixed;
-  overflow: auto;
-  height: 63px;
-  padding: 16px;
   bottom: 0;
   left: 0;
   right: 0;
   text-align: center;
+  height: 53px;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: auto;
   box-shadow: 0 -2px 4px -2px black;
+  background-color: white;
 }
 
 footer .media-link {
   height: 32px;
 }
 
+
 footer a {
-  margin-right: 64px;
-  text-decoration: none;
+text-decoration: none;
 }
 
-footer a:last-child {
-  margin-right: 0;
-}
-
-header, footer {
-  background: #f8f8f8;
+.quote{
+  font-family: 'Times New Roman', cursive;
+  font-weight: 100;
+  color:rgb(7, 5, 126);
+  font-size: 3em;
+  text-align: center;
+  margin-top: 2em;
 }
